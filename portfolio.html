@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - John Doe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha384-xeQKceABqMRJccbuRXYjv5GzKUZYCShn4fud9ufaMELql/SVXiYajb69vO6fP/Lq" crossorigin="anonymous">
+    <style>
+        .portfolio-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.2s; /* Add a transition for image scaling */
+            margin-bottom: 20px; /* Add space below each project */
+        }
+
+        .portfolio-item img {
+            transition: transform 0.2s; /* Add a transition for image scaling */
+        }
+
+        .portfolio-item:hover {
+            transform: scale(1.1); /* Increase image size on hover */
+        }
+
+        .portfolio-item:hover img {
+            transform: scale(1); /* Reset image scaling on hover */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Portfolio</h1>
+        </div>
+    </header>
+
+    <!-- Copy the navigation section from index.html -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="customers.html">Customers</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="portfolio-items" class="section">
+        <div class="section-content">
+            <h2>My Portfolio</h2>
+
+            <!-- Placeholder Images and Project Descriptions for Sound Engineers -->
+            <div class="portfolio-item">
+                <img src="Generic-sound-engineer-pictures-1.jpg" alt="Sound Engineer 1">
+                <h3>Live Concert Sound Engineering</h3>
+                <p>Provided outstanding sound engineering for a high-energy rock concert, ensuring the audience experienced every note with exceptional clarity and energy.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="Generic-sound-engineer-pictures-2.jpg" alt="Sound Engineer 2">
+                <h3>Podcast Audio Enhancement</h3>
+                <p>Enhanced the audio quality of a popular podcast series, eliminating background noise and optimizing voice recordings for a professional and engaging listening experience.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="Generic-sound-engineer-pictures-3.jpg" alt="Sound Engineer 3">
+                <h3>Film Soundtrack Production</h3>
+                <p>Collaborated on the sound production of an award-winning movie, crafting immersive soundscapes that heightened the emotional impact of key scenes.</p>
+            </div>
+
+            <div class="portfolio-item">
+                <img src="Generic-sound-engineer-pictures-4.jpg" alt="Sound Engineer 4">
+                <h3>Music Album Mixing</h3>
+                <p>Mixed and mastered an upcoming artist's debut album, ensuring each track had the perfect balance of instruments and vocals, resulting in a sonically stunning release.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 John Doe - Sound Engineer</p>
+    </footer>
+</body>
+</html>

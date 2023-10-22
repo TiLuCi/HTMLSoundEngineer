@@ -1,0 +1,123 @@
+/* Reset some default styles */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.header-content {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.header-content h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.header-content p {
+    font-size: 1.2em;
+    color: #666;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+}
+
+.section {
+    background-color: #fff;
+    margin: 20px 0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.section-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.5;
+}
+
+.portfolio-item {
+    margin: 20px 0;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+}
+
+.portfolio-item h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.portfolio-item p {
+    font-size: 1.1em;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 0.9em;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .section-content {
+        padding: 0 20px;
+    }
+}
+
+/* Existing styles from styles.css */
+
+/* New styles for the fade-in effect */
+.fade-in {
+    opacity: 0.2; /* Reduced starting opacity */
+    transform: translateY(20px);
+    transition: opacity 1s, transform 1s;
+}
+
+.fade-in.fade-in-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
