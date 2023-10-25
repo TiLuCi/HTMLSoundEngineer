@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>John Doe - Sound Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+	<!-- Cookie banner -->
+    <div id="cookie-banner" class="cookie-banner">
+        <p>This website uses cookies to ensure you get the best experience. <a href="#">Learn more</a></p>
+        <button id="accept-cookies" class="accept-button">Accept Cookies</button>
+    </div>
+    <header class="fade-in">
+        <div class="header-content">
+            <h1>John Doe</h1>
+            <p>Sound Engineer</p>
+        </div>
+    </header>
+
+    <nav class="fade-in">
+        <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="customers.html">Customers</a></li> <!-- Link to Customers Page -->
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="about" class="section fade-in">
+        <div class="section-content">
+            <h2>About John Doe</h2>
+            <p>
+                Welcome to my sound engineering world. I'm John Doe, a passionate sound engineer with a knack for creating auditory magic. My years of experience in the industry have honed my skills in delivering top-notch sound quality for a variety of projects.
+            </p>
+        </div>
+    </section>
+
+    <section id="portfolio" class="section fade-in">
+        <div class="section-content">
+            <h2>Portfolio</h2>
+            <p>Explore some of my recent projects:</p>
+            <div class="portfolio-item">
+                <img src="project1.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>A captivating music production showcasing a fusion of different genres, with a unique and immersive sound experience.</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="project2.jpg" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>An audio engineering masterpiece that brings out the best in every instrument, delivering crisp and vibrant sound quality.</p>
+            </div>
+            <!-- Add more portfolio items as needed with random descriptions -->
+
+            <!-- Add a link to the "Customers" page -->
+            <p><a href="customers.html">See the list of customers I've worked with</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="section fade-in">
+        <div class="section-content">
+            <h2>Contact Me</h2>
+            <p>If you're interested in working together or have any inquiries, feel free to reach out:</p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:john.doe@email.com">john.doe@email.com</a></p>
+            <p><i class="fas fa-phone"></i> Phone: [Your Phone Number]</p>
+        </div>
+    </section>
+
+    <footer class="fade-in">
+        <p>&copy; 2023 John Doe - Sound Engineer</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(window).scroll(function() {
+                $(".fade-in").each(function() {
+                    var elementBottom = $(this).offset().top + $(this).outerHeight();
+                    var viewportBottom = $(window).scrollTop() + $(window).height();
+                    if (elementBottom < viewportBottom) {
+                        $(this).addClass("fade-in-visible");
+                    }
+                });
+            });
+        });
+    </script>
+	<script src="script.js"></script>
+</body>
+</html>

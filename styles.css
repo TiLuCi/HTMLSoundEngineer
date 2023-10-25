@@ -140,4 +140,5 @@ footer {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    margin-left: 10px; /* Add margin to separate button from text */
 }
