@@ -75,7 +75,7 @@ p {
 }
 
 .portfolio-item {
-    margin: 20px 0;
+    margin: 100px 0;
 }
 
 .portfolio-item img {
@@ -92,6 +92,7 @@ p {
     font-size: 1.1em;
     color: #555;
 }
+
 
 footer {
     text-align: center;
