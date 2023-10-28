@@ -74,27 +74,41 @@ p {
     line-height: 1.5;
 }
 
+/* Add margin to the bottom of portfolio items to increase space between them */
+#portfolio .portfolio-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s; /* Add a transition for image scaling */
+    margin-bottom: 4000px;
+}
+
 .portfolio-item {
-    margin: 100px 0;
+    margin: 100px;
 }
 
 .portfolio-item img {
-    max-width: 100%;
+    transition: transform 0.2s; /* Add a transition for image scaling */
 }
 
-.portfolio-item h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-    color: #333;
+/* Add this rule to target portfolio items for scaling on hover */
+.portfolio-item:hover {
+    transform: scale(1.1); /* Increase image size on hover */
 }
 
-.portfolio-item p {
-    font-size: 1.1em;
-    color: #555;
+/* Reset scaling for audio elements in the "Samples" section */
+#Samples .portfolio-item:hover {
+    transform: scale(1);
 }
 
+/* Reset the text opacity on hover for portfolio items */
+.portfolio-item:hover h3,
+.portfolio-item:hover p {
+    opacity: 1;
+}
 
-footer {
+.footer {
     text-align: center;
     padding: 10px 0;
     background-color: #333;
@@ -108,8 +122,6 @@ footer {
         padding: 0 20px;
     }
 }
-
-/* Existing styles from styles.css */
 
 /* New styles for the fade-in effect */
 .fade-in {
